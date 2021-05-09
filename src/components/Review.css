@@ -1,0 +1,16 @@
+.review-container {
+    margin: 100px;
+    background: #fff;
+}
+
+h2 {
+    text-align: center;
+}
+
+.card-type {
+    color: gray;
+}
+
+.card-review {
+    color: crimson;
+}

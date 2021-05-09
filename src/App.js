@@ -1,27 +1,28 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
+import React from 'react';
 
-import { HomeNavBar, HomePage, Login, LoginNavBar } from './components';
+import Footer from './components/Footer.js';
+import Navbar from './components/Navbars.js';
 
-const App = () => {
+import Home from './components/pages/Home';
+import Review from './components/Review.js';
+import Signin from './components/pages/Signin.js';
+import Signup from './components/pages/Signup.js';
+import AddPlace from './components/pages/AddPlace';
+
+function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
+      <Navbar />
       <Switch>
-        <Route exact path="/mynearbyplaces">
-          <HomeNavBar />
-          <HomePage />
-        </Route>
-        <Route exact path="/login">
-          <LoginNavBar />
-          <Login />
-        </Route>
+        <Route path="/" exact component={Home} />
+        <Route path="/review" component={Review} />
+        <Route path="/signin" component={Signin} />
+        <Route path="/signup" component={Signup} />
+        <Route path="/place" component={AddPlace} />
       </Switch>
-    </Router>
+      <Footer />
+    </HashRouter>
   );
 }
 

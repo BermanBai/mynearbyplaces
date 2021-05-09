@@ -1,0 +1,93 @@
+.body {
+  padding: 10px 20%;
+  min-height: 400px;
+}
+
+.result {
+  /* border: 1px solid; */
+  /* min-width: 1000px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardItem {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
+  margin: 5px;
+  padding: 10px;
+  min-width: 250px;
+  max-width: calc(25% - 18px);
+  transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+.cardItem:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.cardItem .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btns {
+  display: flex;
+  margin-top: 20px;
+}
+
+.other {
+  flex: 1;
+}
+
+
+
+.dialog {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  z-index: 99;
+}
+
+.dialog .d-body {
+  min-width: 600px;
+
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.d-close {
+  margin-left: 20px
+}
+
+.review-item {
+  /* border-boggom: 1px solid; */
+  border-top: 1px solid #ddd;
+}
+
+.review-list {
+  min-height: 50px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.rating-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-a {
+  padding-left: 20px;
+}
+
+.comment {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
