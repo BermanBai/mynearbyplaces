@@ -1,4 +1,4 @@
-const baseUrl = process.env.NODE_ENV !== 'production' ? 'http://127.0.0.1:4002' : 'https://jinhanbai-nearbyplaces.herokuapp.com';
+const baseUrl = process.env.NODE_ENV !== 'production' ? 'http://127.0.0.1:4002' : 'https://jinhanbai-nearbyplaces.herokuapp.com/';
 console.log('baseurl:', baseUrl);
 
 class Http {
